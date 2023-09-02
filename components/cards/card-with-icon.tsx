@@ -1,0 +1,52 @@
+import React from "react";
+import { View, Text, StyleSheet } from "react-native";
+import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { ReactJSX } from "../../types/common";
+
+const CardWithIcon: React.FC<ReactJSX> = ({ content }) => {
+  return (
+    <View style={styles.cardWithIcon}>
+      {content === "react" && (
+        <MaterialCommunityIcons name="react" size={20} color="black" />
+      )}
+      {content === "typescript" && (
+        <MaterialCommunityIcons
+          name="language-typescript"
+          size={24}
+          color="black"
+        />
+      )}
+      {content === "javascript" && (
+        <MaterialCommunityIcons
+          name="language-javascript"
+          size={24}
+          color="black"
+        />
+      )}
+      <Text style={styles.text}>{content}</Text>
+    </View>
+  );
+};
+
+export default CardWithIcon;
+
+const styles = StyleSheet.create({
+  cardWithIcon: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    flexDirection: "row",
+    gap: 5,
+    marginHorizontal: 12,
+  },
+  icon: {
+    fontSize: 36,
+    fontWeight: "800",
+    textAlign: "center",
+  },
+  text: {
+    fontSize: 20,
+    fontWeight: "800",
+    textAlign: "center",
+  },
+});
