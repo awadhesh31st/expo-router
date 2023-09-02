@@ -2,7 +2,7 @@
 
 This project is a part of my learning journey with Expo and React Navigation. It's designed to help me understand and practice routing and navigation concepts within the Expo framework.
 
-![Simulator Screenshot - iPhone 14 - 2023-09-03 at 01 53 25](https://github.com/awadhesh31st/expo-router/assets/91739540/a18419f5-479e-4543-9edc-6c808ca332f4)
+<img src="https://github.com/awadhesh31st/expo-router/assets/91739540/a18419f5-479e-4543-9edc-6c808ca332f4" width="auto" height="500px">
 
 ## Table of Contents
 
