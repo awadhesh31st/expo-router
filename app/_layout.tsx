@@ -1,8 +1,10 @@
-import { Stack } from "expo-router";
 import React from "react";
+import { Stack, useRouter } from "expo-router";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { TouchableOpacity } from "react-native";
 
 const RootLayout = () => {
+  const router = useRouter()
   return (
     <Stack
       screenOptions={{
@@ -13,7 +15,9 @@ const RootLayout = () => {
           <MaterialCommunityIcons name="menu" size={24} color="black" />
         ),
         headerLeft: () => (
-          <MaterialCommunityIcons name="simple-icons" size={24} color="black" />
+          <TouchableOpacity onPress={() => router.push('/')}>
+            <MaterialCommunityIcons name="simple-icons" size={24} color="black" />
+          </TouchableOpacity>
         ),
       }}
     >

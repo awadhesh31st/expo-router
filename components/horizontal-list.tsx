@@ -23,7 +23,6 @@ export default HorizontalList;
 
 const styles = StyleSheet.create({
   horizontalList: {
-    display: "flex",
     justifyContent: "center",
     alignItems: "center",
     paddingVertical: 12,
@@ -33,10 +32,5 @@ const styles = StyleSheet.create({
     borderTopWidth: 1,
     borderBottomWidth: 1,
     borderColor: "#c0eacb",
-  },
-  horizontalListText: {
-    fontSize: 16,
-    fontWeight: "normal",
-    textAlign: "center",
-  },
+  }
 });

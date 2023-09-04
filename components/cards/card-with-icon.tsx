@@ -32,8 +32,6 @@ export default CardWithIcon;
 
 const styles = StyleSheet.create({
   cardWithIcon: {
-    display: "flex",
-    justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
     gap: 5,
