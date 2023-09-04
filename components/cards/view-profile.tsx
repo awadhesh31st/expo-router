@@ -1,23 +1,37 @@
 import { MaterialCommunityIcons } from "@expo/vector-icons";
+import { openURL } from "expo-linking";
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Pressable } from "react-native";
+import { ViewProfileProps } from "../../types/common";
 
-const ViweProfile = () => {
+const ViewProfile: React.FC<ViewProfileProps> = ({
+  name,
+  uri = "",
+  type,
+  view = "",
+}) => {
   return (
     <View style={styles.wrapper}>
       <View style={styles.media}>
-        <MaterialCommunityIcons name="github" size={24} color="black" />
-        <Text style={styles.userName}>Awadhesh</Text>
+        {type === "github" && (
+          <MaterialCommunityIcons name="github" size={24} color="black" />
+        )}
+        {type === "linkedin" && (
+          <MaterialCommunityIcons name="linkedin" size={24} color="black" />
+        )}
+        <Text style={styles.userName}>{name}</Text>
       </View>
       <View style={{ flex: 1 }} />
       <View style={styles.view}>
-        <Text style={styles.viewLink}>View all</Text>
+        <Pressable onPress={() => openURL(uri)}>
+          <Text style={styles.viewLink}>{view}</Text>
+        </Pressable>
       </View>
     </View>
   );
 };
 
-export default ViweProfile;
+export default ViewProfile;
 
 export const styles = StyleSheet.create({
   wrapper: {
@@ -37,7 +51,7 @@ export const styles = StyleSheet.create({
   },
   userName: {
     fontSize: 16,
-    fontWeight: "800"
+    fontWeight: "800",
   },
   view: {
     flex: 1,
@@ -46,6 +60,6 @@ export const styles = StyleSheet.create({
     alignSelf: "center",
   },
   viewLink: {
-    textDecorationLine: "underline"
-  }
+    textDecorationLine: "underline",
+  },
 });

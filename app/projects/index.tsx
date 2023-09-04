@@ -9,7 +9,8 @@ import { GitRepoProps } from "../../types/common";
 import DataList from "../../components/data-list";
 import GoBack from "../../components/go-back";
 import DividerSapce from "../../components/divider-sapce";
-import ViweProfile from "../../components/cards/viwe-profile";
+import ViewProfile from "../../components/cards/view-profile";
+import { github } from "../../constants/common";
 
 const Project = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -57,7 +58,12 @@ const Project = () => {
           subContent="about me"
         />
         <DataList apiData={data} isLoading={isLoading} />
-        <ViweProfile/>
+        <ViewProfile
+          name="Awadhesh"
+          type="github"
+          uri={github}
+          view="View all"
+        />
       </ScrollView>
     </View>
   );

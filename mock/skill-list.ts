@@ -1,6 +1,6 @@
-import { ReactJSX } from "../types/common";
+import { BasicProps, ReactJSX } from "../types/common";
 
-export const SkillList: ReactJSX[] = [
+export const SkillList: BasicProps[] = [
   {
     id: 1,
     content: "react",

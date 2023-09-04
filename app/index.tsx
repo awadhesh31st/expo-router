@@ -1,4 +1,4 @@
-import { StyleSheet, View } from "react-native";
+import { ScrollView, StyleSheet, View } from "react-native";
 import MainHeading from "../components/main-heading";
 import Paragraph from "../components/paragraph";
 import HorizontalList from "../components/horizontal-list";
@@ -6,6 +6,8 @@ import SubHeading from "../components/sub-heading";
 import Poster from "../components/poster";
 import PressLink from "../components/press-link";
 import DividerSapce from "../components/divider-sapce";
+import ViewProfile from "../components/cards/view-profile";
+import { linkedin } from "../constants/common";
 
 const App = () => {
   return (
@@ -26,9 +28,20 @@ const App = () => {
         alignSelf="center"
       />
       <HorizontalList />
-      <SubHeading content="Over the years" horizontalAlignment="center" />
-      <Paragraph content="#2023 Awadhesh Kumar" horizontalAlignment="center" />
-      <Poster />
+      <ScrollView>
+        <SubHeading content="Over the years" horizontalAlignment="center" />
+        <Paragraph
+          content="#2023 Awadhesh Kumar"
+          horizontalAlignment="center"
+        />
+        <Poster />
+        <ViewProfile
+          name="Awadhesh"
+          type="linkedin"
+          uri={linkedin}
+          view="See"
+        />
+      </ScrollView>
     </View>
   );
 };
