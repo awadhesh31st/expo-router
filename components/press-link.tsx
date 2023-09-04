@@ -1,6 +1,6 @@
 import React from "react";
-import { TouchableOpacity, View, Text, StyleSheet } from "react-native";
-import { Link, useRouter } from "expo-router";
+import { View, Text, StyleSheet, Pressable } from "react-native";
+import { useRouter } from "expo-router";
 import { BasicProps } from "../types/common";
 
 const PressLink: React.FC<BasicProps> = ({
@@ -11,15 +11,12 @@ const PressLink: React.FC<BasicProps> = ({
 }) => {
   const router = useRouter();
   return (
-    <TouchableOpacity
-      style={styles.button}
-      onPress={() => router.push(uri)}
-    >
+    <Pressable style={styles.button} onPress={() => router.push(uri)}>
       <View style={{ ...styles.buttonWrapper, ...{ alignSelf: alignSelf } }}>
         {content && <Text style={styles.buttonText}>{content}</Text>}
         {subContent && <Text style={styles.buttonSubText}>{subContent}</Text>}
       </View>
-    </TouchableOpacity>
+    </Pressable>
   );
 };
 
@@ -31,7 +28,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   buttonWrapper: {
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingHorizontal: 20,
     paddingVertical: 12,
     backgroundColor: "#0f0d0e",
