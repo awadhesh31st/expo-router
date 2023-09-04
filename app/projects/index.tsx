@@ -11,6 +11,7 @@ import GoBack from "../../components/go-back";
 import DividerSapce from "../../components/divider-sapce";
 import ViewProfile from "../../components/cards/view-profile";
 import { github } from "../../constants/common";
+import { StatusBar } from "expo-status-bar";
 
 const Project = () => {
   const [isLoading, setIsLoading] = useState<boolean>(true);
@@ -45,6 +46,7 @@ const Project = () => {
           title: "",
         }}
       />
+      <StatusBar style="dark" />
       <GoBack content="Go Back" uri="/" />
       <DividerSapce marginTop={28} />
       <ScrollView showsHorizontalScrollIndicator={false}>
