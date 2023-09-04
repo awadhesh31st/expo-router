@@ -6,7 +6,7 @@ export type AlignSelf =
   | "center"
   | "baseline";
 
-export interface BasicProps {
+export interface BasicProps extends ReactJSX {
   id?: number | string;
   content: string;
   subContent?: string;
@@ -18,7 +18,7 @@ export interface BasicProps {
   bgColor?: string;
 }
 
-export interface ReactJSX extends BasicProps {
+export interface ReactJSX {
   icon?: React.ReactNode;
 }
 
@@ -49,4 +49,12 @@ export interface SpaceAround {
   marginRight?: number;
   marginVertical?: number;
   marginHorizontal?: number;
+}
+
+export interface ViewProfileProps {
+  name?: string;
+  uri?: string;
+  icon?: ReactJSX;
+  type?: "linkedin" | "github";
+  view?: string;
 }

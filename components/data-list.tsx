@@ -8,6 +8,7 @@ import {
   Text,
 } from "react-native";
 import { colorList } from "../constants/color";
+import { OpenURL } from "../utils/can-link-open";
 
 const DataList: React.FC<ShareAPIDataProps> = ({
   apiData,
@@ -22,7 +23,7 @@ const DataList: React.FC<ShareAPIDataProps> = ({
           <Pressable
             key={key}
             style={[styles.card, { backgroundColor: colorList[key] }]}
-            onPress={() => console.log("done")}
+            onPress={() => OpenURL(item.html_url)}
           >
             <View style={styles.cardBody}>
               <Text style={styles.fullName}>{item.full_name}</Text>
