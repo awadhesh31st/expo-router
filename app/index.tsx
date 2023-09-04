@@ -1,4 +1,4 @@
-import { ScrollView, StyleSheet, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, View } from "react-native";
 import MainHeading from "../components/main-heading";
 import Paragraph from "../components/paragraph";
 import HorizontalList from "../components/horizontal-list";
@@ -7,40 +7,40 @@ import Poster from "../components/poster";
 import PressLink from "../components/press-link";
 import DividerSapce from "../components/divider-sapce";
 import ViewProfile from "../components/cards/view-profile";
-import { linkedin } from "../constants/common";
+import { linkedin, portfolio } from "../constants/common";
+import { HomeMock } from "../mock/home-mock";
+import { OpenURL } from "../utils/can-link-open";
 
 const App = () => {
+  const { title, description } = HomeMock;
   return (
     <View style={styles.container}>
-      <DividerSapce marginTop={28} />
-      <MainHeading
-        content="Creating intuitive and User-friendly Web interfaces"
-        horizontalAlignment="center"
-      />
-      <Paragraph
-        content="I have created courses on React, Next.js, and web development to share my knowledge with others."
-        horizontalAlignment="center"
-      />
-      <PressLink
-        uri="/projects"
-        content="Get Touch - "
-        subContent="with project"
-        alignSelf="center"
-      />
-      <HorizontalList />
       <ScrollView>
+        <DividerSapce marginTop={28} />
+        <MainHeading content={title} horizontalAlignment="center" />
+        <Paragraph content={description} horizontalAlignment="center" />
+        <PressLink
+          uri="/projects"
+          content="Check - "
+          subContent="some project"
+          alignSelf="center"
+        />
+        <HorizontalList />
         <SubHeading content="Over the years" horizontalAlignment="center" />
         <Paragraph
           content="#2023 Awadhesh Kumar"
           horizontalAlignment="center"
         />
-        <Poster />
+        <Pressable onPress={() => OpenURL(portfolio)}>
+          <Poster />
+        </Pressable>
         <ViewProfile
           name="Awadhesh"
           type="linkedin"
           uri={linkedin}
-          view="See"
+          view="View"
         />
+        <DividerSapce marginTop={12} />
       </ScrollView>
     </View>
   );
