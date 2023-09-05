@@ -38,12 +38,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
     color: "#f9f4da",
-    fontFamily: "Playfair-Bold",
+    fontFamily: "font-Bold",
   },
   buttonSubText: {
     fontSize: 16,
     fontWeight: "normal",
     color: "#f9f4da",
-    fontFamily: "Playfair-Regular",
+    fontFamily: "font-Light",
   },
 });

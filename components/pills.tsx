@@ -34,6 +34,6 @@ const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: "600",
     color: "#f9f4da",
-    fontFamily: "Playfair-Regular",
+    fontFamily: "font-Light",
   },
 });
