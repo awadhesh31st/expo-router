@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
   },
   paragraphText: {
     fontSize: 16,
-    fontWeight: "normal",
+    fontFamily: "Playfair-Regular",
   },
 });

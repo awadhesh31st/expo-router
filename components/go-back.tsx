@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     gap: 6,
   },
   paragraphText: {
-    fontSize: 16,
-    fontWeight: "normal",
+    fontSize: 12,
+    fontFamily: "Playfair-Regular",
   },
 });
