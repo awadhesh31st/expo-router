@@ -2,12 +2,10 @@
 
 This project is a part of my learning journey with Expo and React Navigation. It's designed to help me understand and practice routing and navigation concepts within the Expo framework.
 
-<img src="https://github.com/awadhesh31st/native-project/assets/91739540/0f4c502b-c709-4a37-b7f6-271474e58548" width="auto" height="500px">
-<img src="https://github.com/awadhesh31st/native-project/assets/91739540/df7ca447-146f-47a0-9982-55cba9cb8a92" width="auto" height="500px">
-<img src="https://github.com/awadhesh31st/native-project/assets/91739540/46c878aa-4e74-4474-b82e-898cd5fad405" width="auto" height="500px">
-<img src="https://github.com/awadhesh31st/native-project/assets/91739540/baa67935-fe67-4052-8619-531af5411914" width="auto" height="500px">
-<img src="https://github.com/awadhesh31st/native-project/assets/91739540/396796fb-d47d-4726-aa6a-607e1bf8fe19" width="auto" height="500px">
-
+<img src="https://github.com/awadhesh31st/native-project/assets/91739540/4e440cff-ae7d-4d53-8036-1426b247ef8e" width="auto" height="500px">
+<img src="https://github.com/awadhesh31st/native-project/assets/91739540/1e48443c-305c-4820-808a-24f1c0113c52" width="auto" height="500px">
+<img src="https://github.com/awadhesh31st/native-project/assets/91739540/c24ce50e-6fb8-4ee9-bc52-3661628c932f" width="auto" height="500px">
+<img src="https://github.com/awadhesh31st/native-project/assets/91739540/d06e24a4-8d55-419e-a3a9-c6ba1344e0d3" width="auto" height="500px">
 
 
 ## Table of Contents
