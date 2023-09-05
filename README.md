@@ -4,8 +4,8 @@ This project is a part of my learning journey with Expo and React Navigation. It
 
 <img src="https://github.com/awadhesh31st/native-project/assets/91739540/0f4c502b-c709-4a37-b7f6-271474e58548" width="auto" height="500px">
 <img src="https://github.com/awadhesh31st/native-project/assets/91739540/df7ca447-146f-47a0-9982-55cba9cb8a92" width="auto" height="500px">
-<img src="https://github.com/awadhesh31st/native-project/assets/91739540/81b7c829-98d3-465e-8d5b-505a224eb6af" width="auto" height="500px">
-
+<img src="https://github.com/awadhesh31st/native-project/assets/91739540/b067c840-982d-410a-b2ef-1d257410291f" width="auto" height="500px">
+<img src="https://github.com/awadhesh31st/native-project/assets/91739540/396796fb-d47d-4726-aa6a-607e1bf8fe19" width="auto" height="500px">
 
 ## Table of Contents
 
