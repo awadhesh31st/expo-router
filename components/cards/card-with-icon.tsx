@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { ReactJSX } from "../../types/common";
+import { BasicProps } from "../../types/common";
 
-const CardWithIcon: React.FC<ReactJSX> = ({ content }) => {
+const CardWithIcon: React.FC<BasicProps> = ({ content }) => {
   return (
     <View style={styles.cardWithIcon}>
       {content === "react" && (
@@ -39,12 +39,11 @@ const styles = StyleSheet.create({
   },
   icon: {
     fontSize: 36,
-    fontWeight: "800",
     textAlign: "center",
   },
   text: {
     fontSize: 20,
-    fontWeight: "800",
     textAlign: "center",
+    fontFamily: "Playfair-Black",
   },
 });

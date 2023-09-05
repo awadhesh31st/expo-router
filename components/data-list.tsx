@@ -55,15 +55,16 @@ export const styles = StyleSheet.create({
   fullName: {
     color: "#3d3d4e",
     fontSize: 13,
-    fontWeight: "500",
+    fontFamily: "Playfair-Bold",
   },
   name: {
     fontSize: 20,
-    fontWeight: "700",
     textTransform: "capitalize",
+    fontFamily: "Playfair-Black",
   },
   description: {
     fontSize: 16,
     fontWeight: "normal",
+    fontFamily: "Playfair-Regular",
   },
 });
