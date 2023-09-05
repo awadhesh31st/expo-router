@@ -1,7 +1,7 @@
 import React, { useCallback } from "react";
 import { Stack, useRouter } from "expo-router";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { Pressable } from "react-native";
+import { Pressable, Image } from "react-native";
 import { useFonts } from "expo-font";
 
 import * as SplashScreen from "expo-splash-screen";
@@ -41,7 +41,10 @@ const RootLayout: React.FC = () => {
         ),
         headerLeft: () => (
           <Pressable onPress={() => router.push("/")}>
-            <MaterialCommunityIcons name="spotlight" size={24} color="black" />
+            <Image
+              source={require("../assets/icon-logo.png")}
+              style={{ width: 25, height: 25 }}
+            />
           </Pressable>
         ),
       }}
