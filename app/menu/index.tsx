@@ -63,7 +63,7 @@ export const styles = StyleSheet.create({
   title: {
     fontSize: 70,
     color: "#f9f4da",
-    fontFamily: "Playfair-Black",
+    fontFamily: "font-Black",
   },
   menuWrapper: {
     paddingTop: 30,
@@ -72,11 +72,11 @@ export const styles = StyleSheet.create({
     fontSize: 50,
     color: "#f9f4da",
     textTransform: "capitalize",
-    fontFamily: "Playfair-Black",
+    fontFamily: "font-Bold",
   },
   qoute: {
-    fontSize: 20,
+    fontSize: 16,
     color: "#4f4f4f",
-    fontFamily: "Playfair-Regular",
+    fontFamily: "font-Light",
   },
 });

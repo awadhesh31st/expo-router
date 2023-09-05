@@ -27,6 +27,6 @@ const styles = StyleSheet.create({
   headingText: {
     fontSize: 36,
     fontWeight: "bold",
-    fontFamily: "Playfair-Black",
+    fontFamily: "font-Black",
   },
 });

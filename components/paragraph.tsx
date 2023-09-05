@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   paragraphText: {
-    fontSize: 16,
-    fontFamily: "Playfair-Regular",
+    fontSize: 12,
+    fontFamily: "font-Light",
   },
 });

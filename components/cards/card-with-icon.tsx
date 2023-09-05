@@ -44,6 +44,6 @@ const styles = StyleSheet.create({
   text: {
     fontSize: 20,
     textAlign: "center",
-    fontFamily: "Playfair-Black",
+    fontFamily: "font-Black",
   },
 });

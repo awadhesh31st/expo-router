@@ -51,7 +51,7 @@ export const styles = StyleSheet.create({
   },
   userName: {
     fontSize: 16,
-    fontFamily: "Playfair-ExtraBold",
+    fontFamily: "font-Black",
   },
   view: {
     flex: 1,
@@ -61,6 +61,6 @@ export const styles = StyleSheet.create({
   },
   viewLink: {
     textDecorationLine: "underline",
-    fontFamily: "Playfair-Regular",
+    fontFamily: "font-Light",
   },
 });

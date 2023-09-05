@@ -1,37 +1,35 @@
 import React, { useCallback } from "react";
 import { Stack, useRouter } from "expo-router";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-import { ActivityIndicator, Pressable } from "react-native";
+import { Pressable } from "react-native";
 import { useFonts } from "expo-font";
 
 import * as SplashScreen from "expo-splash-screen";
 
 SplashScreen.preventAutoHideAsync();
 
-const RootLayout = () => {
+const RootLayout: React.FC = () => {
   const router = useRouter();
   const [fontsLoaded, fontError] = useFonts({
-    "Playfair-Regular": require("../assets/fonts/Playfair-Regular.ttf"),
-    "Playfair-Medium": require("../assets/fonts/Playfair-Medium.ttf"),
-    "Playfair-Bold": require("../assets/fonts/Playfair-Bold.ttf"),
-    "Playfair-SemiBold": require("../assets/fonts/Playfair-SemiBold.ttf"),
-    "Playfair-Black": require("../assets/fonts/Playfair-Black.ttf"),
-    "Playfair-ExtraBold": require("../assets/fonts/Playfair-ExtraBold.ttf"),
+    "font-Light": require("../assets/fonts/Merriweather-Light.ttf"),
+    "font-Regular": require("../assets/fonts/Merriweather-Regular.ttf"),
+    "font-Bold": require("../assets/fonts/Merriweather-Bold.ttf"),
+    "font-Black": require("../assets/fonts/Merriweather-Black.ttf"),
   });
 
-  const onLayoutRootView = useCallback(async () => {
+  const onLayoutRootView = useCallback(async (): Promise<void> => {
     if (fontsLoaded || fontError) {
       await SplashScreen.hideAsync();
     }
   }, [fontsLoaded, fontError]);
 
   if (!fontsLoaded && !fontError) {
-    return <ActivityIndicator />;
+    return null;
   }
 
   return (
     <Stack
-      onLayout={onLayoutRootView}
+      onLayout={() => onLayoutRootView()}
       screenOptions={{
         headerStyle: {
           backgroundColor: "#d1ffde",

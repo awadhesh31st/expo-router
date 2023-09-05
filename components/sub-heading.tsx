@@ -28,6 +28,6 @@ const styles = StyleSheet.create({
   headingText: {
     fontSize: 28,
     fontWeight: "700",
-    fontFamily: "Playfair-Black",
+    fontFamily: "font-Black",
   },
 });

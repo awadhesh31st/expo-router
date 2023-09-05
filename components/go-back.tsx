@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
   },
   paragraphText: {
     fontSize: 12,
-    fontFamily: "Playfair-Regular",
+    fontFamily: "font-Light",
   },
 });
